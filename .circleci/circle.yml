@@ -1,0 +1,13 @@
+version: 2
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - test
+
+jobs:
+  test:
+    steps:
+      - run: yarn install
+      - run: yarn test
